@@ -32,4 +32,12 @@ public class LibroService {
         return "Producto eliminado";
     }
 
+    public int totalLibro() {
+        return libroRepository.obtenerLibros().size();
+    }
+
+    public int totalLibroV2() {
+        return libroRepository.totalLibros();
+    }
+
 }
